@@ -1,9 +1,11 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import RootComponent from './src/views/router'
+import React, { useEffect, useState } from 'react';
+import { Alert } from 'react-native';
+import RootComponent from './src/routers/index';
+import firestore from '@react-native-firebase/firestore';
+
 const App = () => {
   return (
-   <RootComponent/> 
+    <RootComponent />
   );
 };
 
